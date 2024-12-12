@@ -1,0 +1,82 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run start",
+    "start": "cross-env NODE_ENV=development max dev",
+    "build": "cross-env NODE_ENV=production max build",
+    "postinstall": "max setup",
+    "prettier": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "setup": "max setup",
+    "test": "jest",
+    "lint": "npm run lint:js && npm run lint:prettier && npm run tsc",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.5.2",
+    "@ant-design/pro-layout": "^7.21.2",
+    "@tweenjs/tween.js": "25.0.0",
+    "@umijs/hooks": "1.9.3",
+    "@umijs/max": "^4.3.36",
+    "@ys/dte": "4.1.13",
+    "ahooks": "3.8.4",
+    "animate": "1.0.0",
+    "animate.css": "4.1.1",
+    "antd": "^5.4.0",
+    "axios": "1.7.9",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.13",
+    "echarts": "5.5.1",
+    "echarts-for-react": "3.0.2",
+    "fs-extra": "^11.2.0",
+    "gdt-jsapi": "^1.9.51",
+    "history": "^5.3.0",
+    "html2canvas": "1.4.1",
+    "lil-gui": "0.20.0",
+    "mobx": "6.13.5",
+    "mobx-react-lite": "4.1.0",
+    "moment": "2.30.1",
+    "papaparse": "^5.4.1",
+    "pdfh5": "1.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.0.11",
+    "styled-components": "6.1.13",
+    "three": "0.171.0",
+    "ys-dte": "4.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.16",
+    "@types/react-dom": "^18.0.11",
+    "@types/ys-dte": "4.3.7",
+    "@umijs/preset-umi": "4.3.36",
+    "cross-env": "7.0.3",
+    "eslint": "9.16.0",
+    "eslint-plugin-react-hooks": "5.1.0",
+    "lib-flexible": "0.3.2",
+    "lint-staged": "15.2.11",
+    "postcss-px2rem": "0.3.0",
+    "prettier": "3.4.2",
+    "typescript": "5.7.2"
+  },
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
+}

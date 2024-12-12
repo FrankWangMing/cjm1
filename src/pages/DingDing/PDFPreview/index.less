@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: PuHuiTi-Regular !important;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  // 这里配合postcss-px2px插件转换成1920px和1080px
+  // 根据浏览器视口的变化以及根节点的字体大小，实际最小宽度为1200px;实际最小高度为695px;
+  min-width: unset !important;
+  min-height: unset !important;
+  background-color: #c3c3c3;
+  // font-size: 1px !important;
+}
+
+.backTop {
+  position: absolute !important;
+  width: 40px !important;
+  height: 40px !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+
+.pdfViewer {
+  overflow: hidden !important;
+}
+
+.pdf-preview-outer {
+  width: 100%;
+  height: 100vh !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative !important;
+  padding: 0;
+}
+
+
+.operation-outer {
+  width: 100%;
+  height: 10px;
+  background-color: #2C51B3;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 20px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+}

@@ -1,0 +1,723 @@
+@font-face {
+  font-family: AlibabaPuHuiTiM;
+  // src: url('/public/font/Alibaba-PuHuiTi-Medium.otf');
+  src: url('/public/font/Alibaba-PuHuiTi-Regular.otf');
+}
+
+@font-face {
+  font-family: AlibabaPuHuiTiB;
+  // src: url('/public/font/Alibaba-PuHuiTi-Bold.otf');
+  src: url('/public/font/Alibaba-PuHuiTi-Regular.otf');
+}
+
+@font-face {
+  font-family: AlibabaPuHuiTiR;
+  src: url('/public/font/Alibaba-PuHuiTi-Regular.otf');
+}
+
+@font-face {
+  font-family: BEBAS;
+  src: url('/public/font/BEBAS.ttf');
+}
+
+@font-face {
+  font-family: DIN-BlackItalic;
+  src: url('/public/font/DIN-BlackItalic.otf');
+}
+
+// 方正小标宋
+@font-face {
+  font-family: FZXBS;
+  src: url('/public/font/FZXBS.ttf');
+}
+
+// 仿宋—国标2312
+@font-face {
+  font-family: FS_GB2312;
+  src: url(/font/FS_GB2312.ttf);
+}
+
+// 黑体
+@font-face {
+  font-family: HEITI;
+  src: url(/font/HEITI.ttf);
+}
+
+// 楷体-国标2312
+@font-face {
+  font-family: KAITI_GB2312;
+  src: url(/font/KAITI_GB2312.ttf);
+}
+
+// Times New Roman
+@font-face {
+  font-family: 'Times New Roman';
+  src: url(/font/times.ttf);
+}
+
+// 胡晓波男神体
+@font-face {
+  font-family: HuXiaoBoNanShenTi;
+  src: url(/font/HuXiaoBoNanShenTi.otf);
+}
+
+// 数字加粗字体
+@font-face {
+  font-family: DIN-BoldItalic;
+  src: url(/font/DIN-BoldItalic.otf);
+}
+
+// 数字常规字体
+@font-face {
+  font-family: DIN-MediumItalic;
+  src: url(/font/DIN-MediumItalic.otf);
+}
+
+// 标题使用--圆欣意冠黑体
+@font-face {
+  font-family: FontquanXinYiGuanHeiTi;
+  src: url(/font/ZiTiQuanXinYiGuanHeiTi4.0-2.ttf);
+}
+
+@font-face {
+  font-family: WeiRuanYaHei;
+  src: url(/font/wryh.ttc);
+}
+
+.xvnicedian-p {
+  padding: 10rem;
+}
+
+.xvnicedian-p p {
+  font-family: AlibabaPuHuiTiR;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: PuHuiTi-Regular !important;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  // 这里配合postcss-px2rem插件转换成1920rem和1080rem
+  // 根据浏览器视口的变化以及根节点的字体大小，实际最小宽度为1200px;实际最小高度为695px;
+  min-width: 1920rem;
+  min-height: 1080rem;
+}
+
+// 隐藏Mapbox的Logo
+a.mapboxgl-ctrl-logo {
+  display: none;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div {
+  box-sizing: border-box !important;
+}
+
+.ant-dropdown-menu-title-content {
+  text-align: center !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding: 5rem !important;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mt10 {
+  margin-top: 10rem;
+}
+
+.mtb10 {
+  margin: 10rem 0;
+}
+
+.p10 {
+  padding: 10rem;
+}
+
+.p-20 {
+  padding: 20rem;
+}
+
+.plr20 {
+  padding: 0 20rem;
+}
+
+.border {
+  border: 1rem dashed #fff;
+}
+
+.ant-slider-horizontal {
+  width: 100% !important;
+}
+
+.mapboxgl-ctrl-bottom-right .mapboxgl-ctrl {
+  display: none !important;
+}
+
+.common-header-outer {
+  width: 420rem;
+  height: 36rem;
+}
+
+.common-header-operation {
+  position: absolute;
+  right: 20rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14rem;
+
+  img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .ant-picker-panel-container {
+    position: absolute;
+  }
+
+  .ant-picker-panel-container .ant-picker-panel {
+    font-family: AlibabaPuHuiTiR !important;
+    font-size: 16rem !important;
+  }
+
+  .ant-picker-range {
+    width: 360rem;
+    height: 40rem;
+    background: linear-gradient(180deg, rgba(0, 5, 17, 0.5) 0%, #282c35 100%);
+    border: 1rem solid rgba(0, 0, 0, 1);
+    border-radius: 2rem;
+
+    .ant-picker-input > input,
+    span {
+      color: #fff;
+      font-family: AlibabaPuHuiTiM;
+      font-size: 16rem;
+    }
+  }
+
+  .ant-popover {
+    left: -340rem !important;
+  }
+
+  .ant-popover-inner {
+    width: 380rem;
+    height: 127rem;
+    background: #5782f2;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+
+    div {
+      color: #fff;
+      border: 0;
+    }
+  }
+
+  .ant-popover-arrow {
+    right: 15rem !important;
+  }
+
+  .ant-popover-arrow-content {
+    --antd-arrow-background-color: #5782f2;
+  }
+
+  .ant-popover-inner-content {
+    width: 400rem;
+    height: 130rem;
+    padding: 10rem 10rem;
+    border-radius: 8rem;
+    z-index: 99999999;
+  }
+
+  .common-header-operation-time-select-outer {
+    > ._content {
+      height: 55rem;
+      margin: 10rem 0;
+      margin-top: 5rem;
+      font-family: AlibabaPuHuiTiR;
+      color: #fff;
+
+      > ._operation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        right: 20rem;
+        bottom: 15rem;
+
+        .back2select {
+          color: rgba(188, 224, 255, 0.99);
+          font-size: 16rem !important;
+          line-height: 40rem !important;
+          margin: 0 10rem;
+          font-family: AlibabaPuHuiTiR;
+          cursor: pointer;
+        }
+
+        .ant-checkbox + span {
+          color: #fff;
+          font-family: AlibabaPuHuiTiR;
+          font-size: 18rem;
+        }
+      }
+
+      .ant-radio-inner::after {
+        background-color: #3c67c1;
+      }
+
+      .ant-radio-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .ant-radio-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 70rem;
+      }
+
+      span.ant-radio + * {
+        padding: 0;
+        color: #fff;
+        font-size: 14rem;
+        margin-top: 10rem;
+        font-family: DIN-BlackItalic, AlibabaPuHuiTiR;
+        z-index: 2;
+      }
+
+      .ant-radio-wrapper.ant-radio-wrapper-in-form-item input[type='radio'],
+      .ant-radio-inner {
+        width: 20rem;
+        height: 20rem;
+      }
+
+      .lianjie-line {
+        width: 281rem;
+        z-index: 1;
+        height: 2rem;
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 2rem;
+        position: absolute;
+      }
+
+      .line1 {
+        top: 12rem;
+        right: -255rem;
+      }
+
+      .line2 {
+        width: 120rem;
+        top: 14rem;
+        right: -60rem;
+      }
+
+      .line3 {
+        width: 60rem;
+        top: 12rem;
+        right: -44rem;
+      }
+    }
+  }
+
+  .ant-picker-input {
+    font-size: 14rem;
+    font-family: AlibabaPuHuiTiR;
+  }
+
+  .search-btn {
+    width: 62rem;
+    height: 30rem;
+    background: linear-gradient(180deg, #5789da 0%, #2c51b3 100%);
+    border-radius: 2rem;
+    border: 1rem solid #93b6e6;
+    font-size: 16rem;
+    font-family: AlibabaPuHuiTiR;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 30rem;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+// .common-header-operation .ant-popover-inner div {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// 全局背景色 -- 黑色，主要是内容区域
+.bg-content-area-alpha {
+  // background-image: linear-gradient(180deg, rgba(37, 56, 96, 0.80) 1%, rgba(0, 0, 0, 0.60) 99%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 13, 17, 0.45) 0%,
+    rgba(40, 49, 53, 0.9) 100%
+  );
+  border-radius: 0rem 0rem 4rem 4rem;
+}
+
+// 色条背景色
+.bg-color-colorBar {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 5, 17, 0.5) 0%,
+    #282c35 100%
+  );
+  border-radius: 8rem;
+}
+
+// 地图操作栏目
+.map-operation-outer {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 5, 17, 0.5) 0%,
+    #282c35 100%
+  );
+  border-radius: 4rem;
+}
+
+// 侧边竖线
+.color-side-line {
+  background-image: linear-gradient(
+    180deg,
+    rgba(188, 224, 255, 0.1) 0%,
+    #b9d1ff 51%,
+    rgba(188, 224, 255, 0.1) 100%
+  );
+}
+
+.transition-duration {
+  transition: width 300ms;
+}
+
+.font-number {
+  font-family: BEBAS;
+  color: #ffffff;
+}
+
+.ant-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .ant-select-selector,
+  .ant-pagination-item,
+  .ant-pagination-disabled,
+  .ant-pagination.ant-pagination-disabled .ant-pagination-item,
+  button,
+  input {
+    background: rgba(201, 214, 255, 0.24) !important;
+    border-radius: 2px !important;
+    color: #fff;
+  }
+
+  .ant-table-pagination.ant-pagination {
+    justify-content: center;
+    margin: 0 !important;
+
+    li {
+      height: 40rem !important;
+      line-height: 40rem !important;
+    }
+  }
+
+  .ant-pagination-options-quick-jumper input,
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    background: rgba(201, 214, 255, 0.24);
+    border-radius: 2rem;
+    border: 0;
+    height: 40rem;
+  }
+
+  .ant-pagination-item a {
+    font-family: AlibabaPuHuiTiR;
+    font-size: 14rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .ant-pagination-item,
+  .ant-pagination-item-active {
+    border: 0;
+  }
+
+  .ant-pagination-item-active {
+    background: linear-gradient(180deg, #156494 0%, #1ba2ff 100%) !important;
+  }
+
+  .ant-pagination-item-link,
+  .ant-select-selector,
+  .ant-pagination-options-quick-jumper,
+  a,
+  input,
+  span,
+  button {
+    font-family: AlibabaPuHuiTiR;
+    font-size: 14rem;
+    color: #ffffff !important;
+    text-align: center;
+    border: 0;
+  }
+}
+
+div {
+  ::-webkit-scrollbar {
+    /*整体样式*/
+    width: 5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /*滚动条小方块*/
+    border-radius: 10rem;
+    background: rgba(154, 167, 186, 0.8);
+    border-radius: 3rem;
+  }
+}
+
+.dots {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: red;
+}
+
+.relative-outer {
+  position: relative;
+}
+
+// 地图上的popup内容确认;
+.mapboxgl-popup-content {
+  background: unset;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 5, 17, 0.5) 0%,
+    #282c35 100%
+  );
+  font-size: 18rem;
+  color: #fff;
+  border-radius: 4rem;
+  font-family: AlibabaPuHuiTiM;
+  padding: 0;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: rgba(0, 5, 17, 0.5);
+  margin-bottom: 10rem;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+// Marker跳动
+@keyframes heartBit {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.alarm-icon-container {
+  margin-top: 10rem;
+  transform: scale(-1.2, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.alarm-icon-circle {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  transition: all 500ms;
+}
+
+.alarm-icon-circle:nth-child(1) {
+  animation: alarm-icon-anim 3s linear infinite;
+}
+
+.alarm-icon-circle:nth-child(2) {
+  animation: alarm-icon-anim 3s linear 0.8s infinite;
+}
+
+.alarm-icon-circle:nth-child(3) {
+  animation: alarm-icon-anim 3s linear 1.6s infinite;
+}
+
+@keyframes alarm-icon-anim {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(4.5);
+  }
+}
+
+.ant-input-textarea-show-count::after {
+  font-size: 12rem;
+}
+
+.time_interval {
+  width: 25%;
+  margin-left: 1%;
+
+  .ant-radio-disabled + span {
+    color: rgba(255, 255, 255, 0.54);
+  }
+
+  .ant-radio-wrapper {
+    margin: 0;
+  }
+
+  span {
+    color: #fff;
+    font-size: 18rem;
+    font-family: AlibabaPuHuiTiM;
+  }
+}
+
+.cus-modal-search-btn {
+  background-image: linear-gradient(
+    180deg,
+    rgba(113, 123, 132, 0.3) 0%,
+    rgba(61, 69, 77, 0.3) 100%
+  );
+  width: 62rem;
+  height: 32rem;
+  font-size: 16rem;
+  // background: linear-gradient(180deg, #eef3fb 0%, #d9e4f5 100%);
+  border-radius: 2rem;
+  border: 1rem solid #93b6e6;
+  cursor: pointer;
+  transition: all 270ms;
+  opacity: 0.9;
+  font-family: MicrosoftYaHei;
+  color: #e9f6ff;
+  letter-spacing: 0.89px;
+  text-align: center;
+  line-height: 32rem;
+  font-weight: 400;
+}
+
+.cus-modal-search-btn:hover {
+  border: 1rem solid #108b9660;
+}
+
+.cus-modal-search-btn:active {
+  border: 4rem solid #108b96;
+}
+
+.cus-modal-header {
+  background: #1c395f;
+  border-bottom: 1px solid rgba(57, 206, 255, 0.7);
+  border-radius: 8rem 8rem 0 0;
+  height: 54rem;
+  font-size: 24rem;
+  font-family: WeiRuanYaHei;
+  color: #ffffff;
+  line-height: 30rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rem;
+
+  .close {
+    width: 40rem;
+    height: 40rem;
+    background-color: red;
+  }
+}
+
+.ant-table-pagination.ant-pagination {
+  justify-content: center;
+  margin: 0 !important;
+
+  li {
+    height: 40rem !important;
+    font-family: AlibabaPuHuiTiR !important;
+    line-height: 40rem !important;
+  }
+}
+
+.ant-picker-dropdown-range {
+  z-index: 99999 !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-in-range::selection,
+.ant-picker-cell-in-view.ant-picker-cell-in-range::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+.ant-picker-cell-inner::selection {
+  background: #1890ff;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end)
+  .ant-picker-cell-inner {
+  border: 1px solid red;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):not(.ant-picker-cell-range-start)
+  .ant-picker-cell-inner {
+  border: 1px solid red;
+}
+
+.ant-picker-range .ant-picker-clear {
+  background-color: #282c35;
+}
