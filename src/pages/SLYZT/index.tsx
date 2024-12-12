@@ -30,7 +30,7 @@ import {
   VillageServer
 } from '@/service';
 import { CurrRiskDesc } from './components/CurrRiskDesc';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import { IMarker } from '@/domain/marker';
 import { IMG_PATH } from '@/utils/const';
 import { SCOPE_LIST } from './const';

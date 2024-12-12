@@ -26,7 +26,7 @@ import { ShelterModal } from './components/ShelterModal';
 import { WarehouseModal } from './components/WarehouseModal';
 import moment from 'moment';
 import { Radio, Space } from 'antd';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import { LEGEND_MAP } from './util';
 import { MonitorServer } from '@/service';
 import { ShowServer } from '@/service/show';

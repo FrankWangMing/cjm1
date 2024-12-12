@@ -7,7 +7,7 @@
  */
 import { Button, Result } from 'antd';
 import React from 'react';
-// import { history } from 'umi';
+// import { history } from '@umijs/max';
 // import { login } from '@/service';
 // import { JWT_TOKEN_KEY } from '@/utils';
 import styled from 'styled-components';

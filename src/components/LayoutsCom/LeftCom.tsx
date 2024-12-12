@@ -3,7 +3,7 @@ import { useSafeState } from 'ahooks';
 import { useEffect } from 'react';
 import GlobalStore from '@/store';
 import { observer } from 'mobx-react-lite';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 interface LeftComProps {
   children: JSX.Element;
   isHiddenSideBar?: boolean;

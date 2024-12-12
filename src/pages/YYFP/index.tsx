@@ -30,7 +30,7 @@ import {
   ShowModeUITime
 } from '@/utils/const';
 import { Provider, useStore } from './store';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import { YYFPRightCom } from './components/QSYYFPRightCom';
 import moment from 'moment';
 

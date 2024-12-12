@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { observer } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
 import { useLayoutEffect, useState } from 'react';
-import { useLocation } from 'umi';
+import { useLocation } from '@umijs/max';
 import { modalList } from '../const';
 const Wrapper = styled.div`
   .main {

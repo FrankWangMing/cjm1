@@ -8,7 +8,8 @@ import { Card } from 'antd';
 const { Meta } = Card;
 import React from 'react';
 import { modalList } from './const';
-import { history } from 'umi';
+import { useLocation } from '@umijs/max';
+
 const Wrapper = styled.div`
   .cardGroup {
     width: 100%;

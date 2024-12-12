@@ -34,7 +34,7 @@ import {
 } from '@/utils/const';
 import { message } from 'antd';
 import moment from 'moment';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 
 const Component = observer(() => {
   const HLYBStore = useStore();

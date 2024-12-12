@@ -24,7 +24,7 @@ import {
 import { IMarker } from './domain/marker';
 import { ShowServer } from './service/show';
 
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import { getParamObj } from './utils';
 import { message } from 'antd';
 export const layout = ({

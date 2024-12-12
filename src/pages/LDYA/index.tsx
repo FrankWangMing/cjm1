@@ -2,7 +2,7 @@ import { CenterContent, SideDecoratorLine } from '@/components/LayoutsCom';
 import GlobalStore from '@/store';
 import { GlobalLayoutWrapper } from '@/style';
 import { useMount, useSafeState, useUnmount } from 'ahooks';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import { SubMenu } from './components/SubMenu';
 
 export default () => {

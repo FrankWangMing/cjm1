@@ -14,7 +14,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 import { message } from 'antd';
 import { DingDingPageRouter, JWT_TOKEN_KEY } from './const';
 import { getParamObj } from '.';
-import { history } from 'umi';
+import { history } from '@umijs/max';
 import GlobalStore from '@/store';
 import { LoginService } from '@/service';
 
